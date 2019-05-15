@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.5)
+include_directories(include)
+add_executable(main src/main.cpp src/periodic_table.cpp src/structure.cpp src/obj.cpp src/material_color.cpp)
+target_link_libraries(main glut GL GLU opencv_core opencv_highgui)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
